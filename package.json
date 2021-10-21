@@ -1,0 +1,22 @@
+{
+    "name": "node-basic",
+    "version": "1.0.0",
+    "description": "backend & frontend is the ultimate backend solution",
+    "engines": {
+        "node": "14"
+    },
+    "main": "backend/build/server.js",
+    "scripts": {
+        "preinstall": "cd backend && npm install -g typescript && npm update",
+        "tsc": "tsc",
+        "build": "npm run tsc",
+        "start": "cd backend && npm run tsc && node ./build/src/server.js"
+    },
+    "keywords": [
+        "express",
+        "backend"
+    ],
+    "license": "ISC",
+    "dependencies": {},
+    "devDependencies": {}
+}
